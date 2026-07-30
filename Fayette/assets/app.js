@@ -106,7 +106,7 @@ require([
         renderer: initialRenderer
     });
 
-    // Reference to the trip records table
+    // Trip records table
     const tripTable = new FeatureLayer({
         url: "https://services3.arcgis.com/MV5wh5WkCMqlwISp/ArcGIS/rest/services/FACT_Shared_Ride/FeatureServer/1"
     });
