@@ -135,7 +135,9 @@ require([
         view: view,
         style: "classic",
         layerInfos: [
-            { layer: blockGroupInteractiveLayer, title: "Inbound Trips" }
+            { layer: blockGroupInteractiveLayer, title: "Drop-off Locations" }
+
+
         ]    
     });
 
@@ -546,7 +548,8 @@ require([
                         style="border: none; background: none; cursor: pointer;">✕</button>
             </div>
             <h3 style="margin-block-start:0px; margin-block-end:0px;">Selected Block Groups</h3>
-            <p style="margin-block-start:0px; font-size:12px; color:#555;">Outbound Trips</p>
+            <p style="margin-block-start:0px; font-size:12px; color:#555;">Trip Origins</p>
+
         `;
 
         originFeatures.forEach(feature => {
@@ -556,7 +559,7 @@ require([
             content += `
                 <div style="margin-bottom: 2px;">
                     <p style="margin-block-end:0px;"><strong>Block Group:</strong> ${bgId}</p>
-                    <p style="margin-block-start:0px;"><strong>Total Outbound Trips:</strong> ${totalTrips}</p>
+                    <p style="margin-block-start:0px;"><strong>Total Pick-ups:</strong> ${totalTrips}</p>
                     <hr>
                 </div>
             `;
@@ -579,7 +582,7 @@ require([
         background-color: #ffffff !important;
         padding: 15px;
         border-radius: 4px;
-        box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+        box-shadow: 0 2px 4px rgba(0,0,0,0.2);
         width: 270px;
         z-index: 1000;
         display: none;
